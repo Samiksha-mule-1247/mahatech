@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MahaTech - 12th Science Conversion Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚡ MahaTech Conversion Hub</h1>
+            <p>Maharashtra State 12th Science & CS/IT Special</p>
+        </header>
+
+        <!-- Number System Converter Section -->
+        <main class="card">
+            <h2>🔢 Number System Converter</h2>
+            <div class="input-group">
+                <label for="numberInput">Enter Number / Value:</label>
+                <input type="text" id="numberInput" placeholder="Eg. 10101 or 45">
+            </div>
+
+            <div class="input-group">
+                <label for="fromBase">From Base:</label>
+                <select id="fromBase">
+                    <option value="2">Binary (Base 2)</option>
+                    <option value="10" selected>Decimal (Base 10)</option>
+                    <option value="16">Hexadecimal (Base 16)</option>
+                    <option value="8">Octal (Base 8)</option>
+                </select>
+            </div>
+
+            <button onclick="performConversion()" class="btn">Convert & Show Steps</button>
+
+            <!-- Live Output Area -->
+            <div id="resultArea" class="result-box hidden">
+                <h3>📊 Output Results:</h3>
+                <div id="binaryRes"></div>
+                <div id="decimalRes"></div>
+                <div id="hexRes"></div>
+                <div id="octalRes"></div>
+                
+                <div class="steps-box">
+                    <h4>📝 Calculation Steps:</h4>
+                    <p id="calcSteps"></p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Elegant & Clean Developer Credit Footer Inside Container -->
+        <footer class="dev-footer">
+            <p>Designed & Developed with ❤️ by <span class="dev-name">Samiksha Mule</span></p>
+            <p class="dev-tag">12th Science Tech Initiative</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
